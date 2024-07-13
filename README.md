@@ -13,12 +13,12 @@ The data collection process is divided into 2 steps:
 In total, I scraped **25,929** movie details with their titles, URLs, summaries and genres.
 
 ## Data Preprocessing
-Initially, there were **27** different genres in the dataset. After some analysis, I found out **6** of them were rare. So, I removed those genres and then I have **21** genres. After that, there were some duplicated values and I got a total of **25,377** samples after dropping them.
+Initially, there were **27** different genres in the dataset. After some analysis, I found out **3** of them were rare. So, I removed those genres and then I have **24** genres. After that, there were some duplicated values and I got a total of **25,377** samples after dropping them.
 
 ## Model Training
 Finetuned ``distilroberta-base`` and ``bert-base-uncased`` models from HuggingFace Transformers using Fastai and Blurr. The model training notebook can be viewed in ``notebooks\genre_data_prep_and_model_implement.ipynb`` 
-``Bert Base Uncased`` found as a best model after the comparison. ## Model Compression and ONNX Inference
-The trained bert-base-uncased model has a memory of 422+MB. I compressed this model using ONNX quantization and brought it under 106MB
+``distilroberta-base`` found as a best model after the comparison. ## Model Compression and ONNX Inference
+The trained distilroberta-base model has a memory of 315+MB. I compressed this model using ONNX quantization and brought it under 78.8MB
 
 ## Model Deployment
 The compressed model is deployed to the HuggingFace Spaces Gradio App. The implementation can be found in ``deployment`` folder or [hf interface](https://huggingface.co/spaces/waddaheaven/multilabel-movie-genre-classifier)
