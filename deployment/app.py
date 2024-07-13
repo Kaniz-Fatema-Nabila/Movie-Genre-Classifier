@@ -3,14 +3,14 @@ import onnxruntime as rt
 from transformers import AutoTokenizer
 import torch, json
 
-tokenizer = AutoTokenizer.from_pretrained("bert-base-uncased")
+tokenizer = AutoTokenizer.from_pretrained("distilroberta-base")
 
 with open("genre_types_encoded.json", "r") as fp:
   encode_genre_types = json.load(fp)
 
 genres = list(encode_genre_types.keys())
 
-inf_session = rt.InferenceSession('movie-genre-classifier-quantized.onnx')
+inf_session = rt.InferenceSession('genre-classifier-quantized.onnx')
 input_name = inf_session.get_inputs()[0].name
 output_name = inf_session.get_outputs()[0].name
 
