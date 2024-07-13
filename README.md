@@ -22,6 +22,7 @@ The trained distilroberta-base model has a memory of 315+MB. I compressed this m
 
 ## Model Deployment
 The compressed model is deployed to the HuggingFace Spaces Gradio App. The implementation can be found in ``deployment`` folder or [hf interface](https://huggingface.co/spaces/waddaheaven/multilabel-movie-genre-classifier)
+<img src = "deployment/gradio_app.png" width="1200" height="500">
 
 ## Web Deployment
 Deployed a Flask App built to take descriptions and show the tags as output. Check flask branch. The website is live website link
