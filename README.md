@@ -6,7 +6,7 @@ The keys of ``deployment\genres_types_encoded.json`` shows the genres.
 Data was collected from MetaCritic Website Listing: [https://www.metacritic.com/browse/movie/all/all/all-time/new](https://www.metacritic.com/browse/movie/all/all/all-time/new) 
 The data collection process is divided into 2 steps:
 
-**Movie URL Scraping:** The movie URLs were scraped with ``scraper\movie_url_scraper.py`` and the URLs are stored along with the title in ``scraper\quotes_urls.csv``.
+**Movie URL Scraping:** The movie URLs were scraped with ``scraper\movie_url_scraper.py`` and the URLs are stored along with the title in ``scraper\movie_urls.csv``.
 
 **Movie Details Scraping:** Using the URLs, the titles, the URLs, the summaries and the genres are scraped with ``scraper\movie_details_scraper.py`` and they are stored in ``scraper\movie_details.csv.
 
@@ -22,7 +22,8 @@ The trained distilroberta-base model has a memory of 315+MB. I compressed this m
 
 ## Model Deployment
 The compressed model is deployed to the HuggingFace Spaces Gradio App. The implementation can be found in ``deployment`` folder or [hf interface](https://huggingface.co/spaces/waddaheaven/multilabel-movie-genre-classifier)
-<img src = "deployment/gradio_app.png" width="1200" height="500">
+
+<img src = "deployment/gradio_app.png" width="1200" height="485">
 
 ## Web Deployment
 Deployed a Flask App built to take descriptions and show the tags as output. Check flask branch. The website is live website link
