@@ -23,4 +23,4 @@ def classify_movie_genre(summary):
 
 label = gr.Label(num_top_classes=5)
 iface = gr.Interface(fn=classify_movie_genre, inputs="text", outputs=label)
-iface.launch(inline=False)
+iface.launch(inline=False, share=True)
