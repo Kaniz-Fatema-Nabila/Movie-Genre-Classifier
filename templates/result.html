@@ -1,0 +1,90 @@
+<html>
+<head>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            width: 60%;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+            overflow: hidden;
+            background-color: rgba(255, 241, 222, 0.922);
+        }
+
+        .head {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 36px;
+            height: 80px;
+            background-color: #f7c8a6;
+            color: white;
+            font-weight: bold;
+        }
+
+        .center {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+            background-color: #fafafa;
+        }
+
+        .box {
+            background-color: rgba(236, 225, 225, 0.941);
+            margin: 20px 0;
+            padding: 20px;
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        label {
+            font-size: 20px;
+            color: #333;
+            font-weight: bold;
+        }
+
+        #text {
+            height: 100px;
+            width: 100%;
+            font-size: 18px;
+            padding: 10px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        .result {
+            font-size: 22px;
+            color: #555;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="head">Movie Genre Classifier</div>
+        <div class="center">
+            <div class="box">
+                <label for="text">Summary</label> <br />
+                <div class="result">{{ input_text }}</div>
+            </div>
+            <div class="box">
+                <label for="text">Genre</label> <br />
+                <div class="result">{{ output_text }}</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
