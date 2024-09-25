@@ -4,13 +4,13 @@
     <style>
         body {
             margin: 0;
-            font-family: 'Gill Sans', Calibri, 'Trebuchet MS', sans-serif;
-            background: url("1_jbfWuj3RSAAvmJeBwLWbsw.jpg") no-repeat center center fixed;
+            font-family: 'Gill Sans';
+            background: url("https://miro.medium.com/v2/resize:fit:3840/1*jbfWuj3RSAAvmJeBwLWbsw.jpeg") no-repeat center center fixed;
             background-size: cover;
+            height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
         }
 
         .container {
@@ -18,24 +18,20 @@
             width: 40%;
             padding: 20px;
             border-radius: 15px;
-            background: rgba(255, 255, 255, 0.2);
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-            backdrop-filter: blur(5px);
+            background: rgba(255, 255, 255, 0.8);
         }
 
         .head {
             font-size: 30px;
-            color: #fff;
-            background: rgba(139, 69, 19, 0.6);
-            padding: 10px;
-            border-radius: 10px;
+            color: #333;
             margin-bottom: 20px;
+            font-weight: bold;
         }
 
         form {
-            background: rgba(255, 255, 255, 0.7);
-            padding: 20px;
-            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         textarea {
@@ -45,6 +41,8 @@
             padding: 10px;
             border-radius: 8px;
             border: 1px solid #ccc;
+            background: white;
+            margin-bottom: 20px;
         }
 
         input[type="submit"] {
@@ -52,26 +50,23 @@
             font-size: 18px;
             padding: 10px;
             background: #8b4513;
-            color: white;
+            color: #000;
             border: none;
             border-radius: 8px;
-            cursor: pointer;
         }
 
-        input[type="submit"]:hover {
-            background: #a0522d;
-        }
     </style>
 </head>
 
 <body>
     <div class="container">
-        <div class="head"><b>Movie Genre Classifier</b></div>
+        <div class="head">Movie Genre Classifier</div>
         <form action="/" method="post">
-            <textarea id="text" name="text" placeholder="Enter description..."></textarea> <br />
+            <textarea id="text" name="text" placeholder="Enter description..."></textarea>
             <input type="submit" value="Submit">
         </form>
     </div>
 </body>
 
 </html>
+       
