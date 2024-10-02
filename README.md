@@ -26,4 +26,4 @@ The compressed model is deployed to the HuggingFace Spaces Gradio App. The imple
 <img src = "deployment/gradio_app.png" width="1200" height="485">
 
 ## Web Deployment
-Deployed a Flask App built to take descriptions and show the tags as output. Check flask branch. The website is live website link
+Deployed a Flask App built to take descriptions and show the tags as output. Check flask branch. The website is live website [here](https://movie-genre-classifier.onrender.com)
