@@ -17,8 +17,9 @@ Initially, there were **27** different genres in the dataset. After some analysi
 
 ## Model Training
 Finetuned ``distilroberta-base`` and ``bert-base-uncased`` models from HuggingFace Transformers using Fastai and Blurr. The model training notebook can be viewed in ``notebooks\genre_data_prep_and_model_implement.ipynb`` 
-``distilroberta-base`` found as a best model after the comparison. ## Model Compression and ONNX Inference
-The trained distilroberta-base model has a memory of 315+MB. I compressed this model using ONNX quantization and brought it under 78.8MB
+``distilroberta-base`` found as a best model after the comparison. 
+## Model Compression and ONNX Inference
+The trained distilroberta-base model has a memory of 315+MB. I compressed this model using ONNX quantization and brought it under 100MB
 
 ## Model Deployment
 The compressed model is deployed to the HuggingFace Spaces Gradio App. The implementation can be found in ``deployment`` folder or [hf interface](https://huggingface.co/spaces/waddaheaven/multilabel-movie-genre-classifier)
@@ -26,4 +27,11 @@ The compressed model is deployed to the HuggingFace Spaces Gradio App. The imple
 <img src = "deployment/gradio_app.png" width="1200" height="485">
 
 ## Web Deployment
-Deployed a Flask App built to take descriptions and show the tags as output. Check flask branch. The website is live website [here](https://movie-genre-classifier.onrender.com)
+Deployed a Flask App built to take summaries as input and show the genres as output. Check flask branch. 
+
+<img src = "web_images/renderss1.png" width="1200" height="485">
+
+<img src = "web_images/renderss2.png" width="1200" height="485">
+
+The website is live website [(https://movie-genre-classifier.onrender.com)]
+
