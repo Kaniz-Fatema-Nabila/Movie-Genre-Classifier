@@ -2,6 +2,8 @@
 A text classification model from data collection, model training, and deployment.
 The keys of ``deployment\genres_types_encoded.json`` shows the genres.
 
+<img src = "image.jpg" width="1000" height="600">
+
 ## Data Collection
 Data was collected from MetaCritic Website Listing: [https://www.metacritic.com/browse/movie/all/all/all-time/new](https://www.metacritic.com/browse/movie/all/all/all-time/new) 
 The data collection process is divided into 2 steps:
